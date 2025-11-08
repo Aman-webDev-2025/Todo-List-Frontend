@@ -1,12 +1,12 @@
 import React from 'react'
-import UseFetch from './hooks/UseFetch'
+import useFetch from './hooks/useFetch'
 import Form from './components/Form'
 import List from './components/List'
 import './App.css'
 
 function App() {
 
-    const {todos, loading, error, handleCreateTodo,handleDeleteTodo, handleToggleTodo } = UseFetch();
+    const {todos, loading, error, handleCreateTodo,handleDeleteTodo, handleToggleTodo } = useFetch();
 
     if(loading){
         return <p>Loading Tasks...</p>
