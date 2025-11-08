@@ -1,4 +1,4 @@
-const API_URL = 'https://todo-list-backend-1836.onrender.com';
+const API_URL = 'https://todo-list-backend-1836.onrender.com/api/todos';
 
 const handleResponse = async (response) => {  //function to handle responses
     if(!response.ok) {
