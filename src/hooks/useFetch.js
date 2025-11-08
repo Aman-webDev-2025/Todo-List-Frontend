@@ -19,7 +19,14 @@ function useFetch() {
         try{
             setLoading(true);
             const data = await fetchTodos();
-            setTodos(data);
+            
+        
+            if (Array.isArray(data)) {
+                setTodos(data);
+            } else {
+                setTodos([]);
+            }
+            
             setError(null);
         }
         catch (err){
